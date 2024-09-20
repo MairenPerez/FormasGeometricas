@@ -17,8 +17,8 @@ namespace Formas2D
             lado = 0;
         }
 
-        public Decagono(double area, double perimetro, double lado) : base(area, perimetro, 10) // Un decágono siempre tiene 10 lados
-        {
+        public Decagono(double area, double perimetro, double lado) : base(area, perimetro, 10)
+        { 
             this.lado = lado;
         }
 
