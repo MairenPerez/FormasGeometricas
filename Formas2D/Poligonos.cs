@@ -8,5 +8,27 @@ namespace Formas2D
 {
     public class Poligonos : Formas2D
     {
+        private int numLados;
+
+        public int NumLados
+        {
+            get { return numLados; }
+            set { numLados = value; }
+        }
+
+        public Poligonos()
+        {
+            numLados = 0;
+        }
+
+        public Poligonos(double area, double perimetro, int numLados) : base(area, perimetro)
+        {
+            this.numLados = numLados;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

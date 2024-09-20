@@ -34,5 +34,10 @@ namespace Formas2D
             this.area = area;
             this.perimetro = perimetro;
         }
+
+        public override string ToString()
+        {
+            return "Area: " + area + " Perimetro: " + perimetro;
+        }
     }
 }
