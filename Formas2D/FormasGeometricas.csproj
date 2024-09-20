@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cuadrado.cs" />
+    <Compile Include="Decagono.cs" />
     <Compile Include="Elipse.cs" />
+    <Compile Include="Enagono.cs" />
     <Compile Include="Formas2D.cs" />
+    <Compile Include="Octagono.cs" />
     <Compile Include="Poligonos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangulo.cs" />
+    <Compile Include="Rombo.cs" />
+    <Compile Include="Triangulo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
