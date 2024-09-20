@@ -12,12 +12,12 @@ namespace Formas2D
             set { lado = value; }
         }
 
-        public Decagono() : base(0, 0, 10) 
+        public Decagono() : base(10) 
         {
             lado = 0;
         }
 
-        public Decagono(double area, double perimetro, double lado) : base(area, perimetro, 10)
+        public Decagono(double lado) : base( 10)
         { 
             this.lado = lado;
         }

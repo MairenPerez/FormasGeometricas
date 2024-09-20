@@ -12,12 +12,12 @@ namespace Formas2D
             set { lado = value; }
         }
 
-        public Enonagono() : base(0, 0, 9) 
+        public Enonagono() : base(9)
         {
             lado = 0;
         }
 
-        public Enonagono(double area, double perimetro, double lado) : base(area, perimetro, 9) 
+        public Enonagono(double lado) : base(9)
         {
             this.lado = lado;
         }

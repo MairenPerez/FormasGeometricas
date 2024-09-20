@@ -19,13 +19,13 @@ namespace Formas2D
             set { diagonalMenor = value; }
         }
 
-        public Rombo() : base(0, 0, 4)
+        public Rombo() : base(4)
         { 
             diagonalMayor = 0;
             diagonalMenor = 0;
         }
 
-        public Rombo(double area, double perimetro, double diagonalMayor, double diagonalMenor) : base(area, perimetro, 4) 
+        public Rombo(double diagonalMayor, double diagonalMenor) : base(4) 
         {
             this.diagonalMayor = diagonalMayor;
             this.diagonalMenor = diagonalMenor;

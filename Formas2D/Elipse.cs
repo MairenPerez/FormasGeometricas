@@ -29,7 +29,7 @@ namespace Formas2D
             radio2 = 0;
         }
 
-        public Elipse(double area, double perimetro, double radio1, double radio2) : base(area, perimetro)
+        public Elipse(double area, double perimetro, double radio1, double radio2)
         {
             this.radio1 = radio1;
             this.radio2 = radio2;

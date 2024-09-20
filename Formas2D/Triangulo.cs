@@ -19,7 +19,7 @@ namespace Formas2D
             Angulo = 0;
         }
 
-        public Triangulo(double area, double perimetro, int numLados, double baseT, double alturaT, double angulo) : base(area, perimetro, numLados)
+        public Triangulo(int numLados, double baseT, double alturaT, double angulo) : base(3)
         {
             BaseT = baseT;
             AlturaT = alturaT;

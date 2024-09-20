@@ -12,19 +12,19 @@ namespace Formas2D
         {
             Console.WriteLine("Rectángulo");
 
-            Rectangulo rectangulo = new Rectangulo(0, 0, 4, 5, 3);
+            Rectangulo rectangulo = new Rectangulo(4, 5, 0);
             Console.WriteLine(rectangulo.ToString());
             Console.WriteLine("Área: " + rectangulo.CalcularArea());
             Console.WriteLine();
 
             Console.WriteLine("Cuadrado: ");
-            Cuadrado cuadrado = new Cuadrado(0, 0, 4, 2, 2);
+            Cuadrado cuadrado = new Cuadrado(0, 0, 4);
             Console.WriteLine(cuadrado.ToString());
             Console.WriteLine("Área: " + cuadrado.CalcularArea());
             Console.WriteLine();
 
             Console.WriteLine("Triángulo: ");
-            Triangulo triangulo = new Triangulo(0, 0, 3, 4, 3, 90);
+            Triangulo triangulo = new Triangulo(3, 4, 3, 0);
             Console.WriteLine(triangulo.ToString());
             Console.WriteLine("Perímetro: " + triangulo.CalcularPerimetro());
             Console.WriteLine();

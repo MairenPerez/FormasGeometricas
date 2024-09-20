@@ -8,7 +8,7 @@ namespace Formas2D
 {
     public class Cuadrado : Rectangulo
     {
-        public Cuadrado(double area, double perimetro, int numLados, double baseRectangulo, double alturaRectangulo) : base(area, perimetro, numLados, baseRectangulo, alturaRectangulo)
+        public Cuadrado(int numLados, double baseRectangulo, double alturaRectangulo) : base(4, baseRectangulo, alturaRectangulo)
         {
             BaseRectangulo = baseRectangulo;
             AlturaRectangulo = alturaRectangulo;
@@ -18,16 +18,6 @@ namespace Formas2D
         public override string ToString()
         {
             return base.ToString();
-        }
-
-        public new double CalcularArea()
-        {
-            return BaseRectangulo * AlturaRectangulo;
-        }
-
-        public new double CalcularPerimetro()
-        {
-            return 2 * (BaseRectangulo + AlturaRectangulo);
         }
     }
 }

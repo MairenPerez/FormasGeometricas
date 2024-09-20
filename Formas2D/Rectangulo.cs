@@ -17,7 +17,7 @@ namespace Formas2D
             AlturaRectangulo = 0;
         }
 
-        public Rectangulo(double area, double perimetro, int numLados, double baseRectangulo, double alturaRectangulo) : base(area, perimetro, numLados)
+        public Rectangulo(int numLados, double baseRectangulo, double alturaRectangulo) : base(4)
         {
             BaseRectangulo = baseRectangulo;
             AlturaRectangulo = alturaRectangulo;

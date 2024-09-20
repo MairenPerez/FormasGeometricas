@@ -12,12 +12,12 @@ namespace Formas2D
             set { lado = value; }
         }
 
-        public Octagono() : base(0, 0, 8) 
+        public Octagono() : base(8) 
         {
             lado = 0;
         }
 
-        public Octagono(double area, double perimetro, double lado) : base(area, perimetro, 8) 
+        public Octagono( double lado) : base(8) 
         {
             this.lado = lado;
         }

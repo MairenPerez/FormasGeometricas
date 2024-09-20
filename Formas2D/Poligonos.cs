@@ -21,7 +21,7 @@ namespace Formas2D
             numLados = 0;
         }
 
-        public Poligonos(double area, double perimetro, int numLados) : base(area, perimetro)
+        public Poligonos(int numLados)
         {
             this.numLados = numLados;
         }
