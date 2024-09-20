@@ -8,36 +8,24 @@ namespace Formas2D
 {
     public class Formas2D
     {
-        private double area;
-        private double perimetro;
-
-        public double Area
-        {
-            get { return area; }
-            set { area = value; }
-        }
-
-        public double Perimetro
-        {
-            get { return perimetro; }
-            set { perimetro = value; }
-        }
+        public double Area { get; set; }
+        public double Perimetro { get; set; }
 
         public Formas2D()
         {
-            area = 0;
-            perimetro = 0;
+            Area = 0;
+            Perimetro = 0;
         }
 
         public Formas2D(double area, double perimetro)
         {
-            this.area = area;
-            this.perimetro = perimetro;
+            Area = area;
+            Perimetro = perimetro;
         }
 
         public override string ToString()
         {
-            return "Area: " + area + " Perimetro: " + perimetro;
+            return $"Area: {Area} Perimetro: {Perimetro}";
         }
     }
 }

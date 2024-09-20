@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Formas2D
 {
-    public class Enagono : Poligonos
+    public class Enonagono : Poligonos
     {
         private double lado;
 
@@ -16,19 +12,19 @@ namespace Formas2D
             set { lado = value; }
         }
 
-        public Enagono()
+        public Enonagono() : base(0, 0, 9) 
         {
             lado = 0;
         }
 
-        public Enagono(double area, double perimetro, int numLados, double lado) : base(area, perimetro, numLados)
+        public Enonagono(double area, double perimetro, double lado) : base(area, perimetro, 9) // Un enonágono siempre tiene 9 lados
         {
             this.lado = lado;
         }
 
         public double CalcularArea()
         {
-            return 9 * Math.Pow(lado, 2) * Math.Sqrt(81 + 9 * Math.Sqrt(30)) / 4;
+            return (9 * Math.Pow(lado, 2)) / (4 * Math.Tan(Math.PI / 9));
         }
 
         public override string ToString()

@@ -8,47 +8,29 @@ namespace Formas2D
 {
     public class Rectangulo : Poligonos
     {
-        private double baseRectangulo;
-        private double alturaRectangulo;
-
-        public double BaseRectangulo
-        {
-            get { return baseRectangulo; }
-            set { baseRectangulo = value; }
-        }
-
-        public double AlturaRectangulo
-        {
-            get { return alturaRectangulo; }
-            set { alturaRectangulo = value; }
-        }
+        public double BaseRectangulo { get; set; }
+        public double AlturaRectangulo { get; set; }
 
         public Rectangulo()
         {
-            baseRectangulo = 0;
-            alturaRectangulo = 0;
+            BaseRectangulo = 0;
+            AlturaRectangulo = 0;
         }
 
         public Rectangulo(double area, double perimetro, int numLados, double baseRectangulo, double alturaRectangulo) : base(area, perimetro, numLados)
         {
-            this.baseRectangulo = baseRectangulo;
-            this.alturaRectangulo = alturaRectangulo;
+            BaseRectangulo = baseRectangulo;
+            AlturaRectangulo = alturaRectangulo;
         }
 
-        /// <summary>
-        /// Para calcular el area del rectángulo 
-        /// </summary>
-        /// <returns></returns>
-        public double CalcularAra()
+        public double CalcularArea()
         {
-            return baseRectangulo * alturaRectangulo;
+            return BaseRectangulo * AlturaRectangulo;
         }
 
         public override string ToString()
         {
-            return base.ToString() + " Base: " + baseRectangulo + " Altura: " + alturaRectangulo;
+            return base.ToString() + $" Base: {BaseRectangulo} Altura: {AlturaRectangulo}";
         }
-
-     
     }
 }

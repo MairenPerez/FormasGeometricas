@@ -8,50 +8,39 @@ namespace Formas2D
 {
     public class Triangulo : Poligonos
     {
-        private double baseT;
-        private double alturaT;
-        private double angulo;
-
-        public double BaseT
-        {
-            get { return baseT; }
-            set { baseT = value; }
-        }
-
-        public double AlturaT
-        {
-            get { return alturaT; }
-            set { alturaT = value; }
-        }
-
-        public double Angulo
-        {
-            get { return angulo; }
-            set { angulo = value; }
-        }
+        public double BaseT { get; set; }
+        public double AlturaT { get; set; }
+        public double Angulo { get; set; }
 
         public Triangulo()
         {
-            baseT = 0;
-            alturaT = 0;
-            angulo = 0;
+            BaseT = 0;
+            AlturaT = 0;
+            Angulo = 0;
         }
 
         public Triangulo(double area, double perimetro, int numLados, double baseT, double alturaT, double angulo) : base(area, perimetro, numLados)
         {
-            this.baseT = baseT;
-            this.alturaT = alturaT;
-            this.angulo = angulo;
+            BaseT = baseT;
+            AlturaT = alturaT;
+            Angulo = angulo;
         }
 
         public double CalcularArea()
         {
-            return (baseT * alturaT) / 2;
+            return (BaseT * AlturaT) / 2;
         }
+
+        public double CalcularPerimetro()
+        {
+            return BaseT + AlturaT + Angulo;
+        }
+
+
 
         public override string ToString()
         {
-            return base.ToString() + " Base: " + baseT + " Altura: " + alturaT + " Angulo: " + angulo;
+            return base.ToString() + $" Base: {BaseT} Altura: {AlturaT} Angulo: {Angulo}";
         }
     }
 }

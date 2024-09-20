@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Formas2D
 {
@@ -16,12 +12,12 @@ namespace Formas2D
             set { lado = value; }
         }
 
-        public Octagono()
+        public Octagono() : base(0, 0, 8) // Un octágono siempre tiene 8 lados
         {
             lado = 0;
         }
 
-        public Octagono(double area, double perimetro, int numLados, double lado) : base(area, perimetro, numLados)
+        public Octagono(double area, double perimetro, double lado) : base(area, perimetro, 8) // Un octágono siempre tiene 8 lados
         {
             this.lado = lado;
         }
