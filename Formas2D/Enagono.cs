@@ -17,7 +17,7 @@ namespace Formas2D
             lado = 0;
         }
 
-        public Enonagono(double area, double perimetro, double lado) : base(area, perimetro, 9) // Un enonágono siempre tiene 9 lados
+        public Enonagono(double area, double perimetro, double lado) : base(area, perimetro, 9) 
         {
             this.lado = lado;
         }

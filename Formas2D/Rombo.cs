@@ -25,7 +25,7 @@ namespace Formas2D
             diagonalMenor = 0;
         }
 
-        public Rombo(double area, double perimetro, double diagonalMayor, double diagonalMenor) : base(area, perimetro, 4) // Un rombo siempre tiene 4 lados
+        public Rombo(double area, double perimetro, double diagonalMayor, double diagonalMenor) : base(area, perimetro, 4) 
         {
             this.diagonalMayor = diagonalMayor;
             this.diagonalMenor = diagonalMenor;
