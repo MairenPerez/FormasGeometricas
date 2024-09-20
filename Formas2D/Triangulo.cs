@@ -53,4 +53,5 @@ namespace Formas2D
         {
             return base.ToString() + " Base: " + baseT + " Altura: " + alturaT + " Angulo: " + angulo;
         }
+    }
 }
