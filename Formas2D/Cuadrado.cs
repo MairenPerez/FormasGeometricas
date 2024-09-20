@@ -24,5 +24,10 @@ namespace Formas2D
         {
             return BaseRectangulo * AlturaRectangulo;
         }
+
+        public new double CalcularPerimetro()
+        {
+            return 2 * (BaseRectangulo + AlturaRectangulo);
+        }
     }
 }

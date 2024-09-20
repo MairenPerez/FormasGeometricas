@@ -28,6 +28,11 @@ namespace Formas2D
             return BaseRectangulo * AlturaRectangulo;
         }
 
+        public double CalcularPerimetro()
+        {
+            return 2 * (BaseRectangulo + AlturaRectangulo);
+        }
+
         public override string ToString()
         {
             return base.ToString() + $" Base: {BaseRectangulo} Altura: {AlturaRectangulo}";

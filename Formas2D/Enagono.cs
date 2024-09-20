@@ -27,6 +27,11 @@ namespace Formas2D
             return (9 * Math.Pow(lado, 2)) / (4 * Math.Tan(Math.PI / 9));
         }
 
+        public double CalcularPerimetro()
+        {
+            return 9 * lado;
+        }
+
         public override string ToString()
         {
             return base.ToString() + " Lado: " + lado;

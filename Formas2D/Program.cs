@@ -36,7 +36,6 @@ namespace Formas2D
             Console.WriteLine();
 
 
-
             Console.ReadKey();
         }
     }
