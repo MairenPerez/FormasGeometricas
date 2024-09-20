@@ -31,7 +31,7 @@ namespace Formas2D
             this.diagonalMenor = diagonalMenor;
         }
 
-        public double CalcularArea()
+        public override double CalcularArea()
         {
             return (diagonalMayor * diagonalMenor) / 2;
         }

@@ -26,7 +26,7 @@ namespace Formas2D
             Angulo = angulo;
         }
 
-        public double CalcularArea()
+        public override double CalcularArea()
         {
             return (BaseT * AlturaT) / 2;
         }

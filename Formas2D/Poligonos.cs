@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Formas2D
 {
-    public class Poligonos : Formas2D
+    public class Poligonos : Forma2D
     {
         private int numLados;
 
@@ -29,6 +29,12 @@ namespace Formas2D
         public override string ToString()
         {
             return base.ToString();
+        }
+
+        public override double CalcularArea()
+        {
+            return 0;
+
         }
     }
 }

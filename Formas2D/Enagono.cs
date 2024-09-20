@@ -22,7 +22,7 @@ namespace Formas2D
             this.lado = lado;
         }
 
-        public double CalcularArea()
+        public override double CalcularArea()
         {
             return (9 * Math.Pow(lado, 2)) / (4 * Math.Tan(Math.PI / 9));
         }

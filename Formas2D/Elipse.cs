@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Formas2D
 {
-    public class Elipse : Formas2D
+    public class Elipse : Forma2D
     {
         private double radio1;
         private double radio2;
@@ -35,7 +35,7 @@ namespace Formas2D
             this.radio2 = radio2;
         }
 
-        public double CalcularArea()
+        public override double CalcularArea()
         {
             return Math.PI * radio1 * radio2;
         }
@@ -44,5 +44,6 @@ namespace Formas2D
         {
             return base.ToString() + " Radio1: " + radio1 + " Radio2: " + radio2;
         }
+
     }
 }

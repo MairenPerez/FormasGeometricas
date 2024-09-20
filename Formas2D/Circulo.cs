@@ -23,7 +23,7 @@ namespace Formas2D
             return base.ToString();
         }
 
-        public double CalcularArea()
+        public override double CalcularArea()
         {
             return Math.PI * Radio1 * Radio2;
         }

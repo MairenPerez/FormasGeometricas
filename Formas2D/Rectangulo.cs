@@ -23,7 +23,7 @@ namespace Formas2D
             AlturaRectangulo = alturaRectangulo;
         }
 
-        public double CalcularArea()
+        public override double CalcularArea()
         {
             return BaseRectangulo * AlturaRectangulo;
         }

@@ -14,7 +14,6 @@ namespace Formas2D
             AlturaRectangulo = alturaRectangulo;
         }
 
-
         public override string ToString()
         {
             return base.ToString();

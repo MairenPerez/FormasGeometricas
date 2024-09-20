@@ -46,6 +46,7 @@
     <Compile Include="Circulo.cs" />
     <Compile Include="Cuadrado.cs" />
     <Compile Include="Decagono.cs" />
+    <Compile Include="Diagrama.cs" />
     <Compile Include="Elipse.cs" />
     <Compile Include="Enagono.cs" />
     <Compile Include="Formas2D.cs" />
