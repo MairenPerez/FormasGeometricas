@@ -29,12 +29,18 @@ namespace Formas2D
             Console.WriteLine("Perímetro: " + triangulo.CalcularPerimetro());
             Console.WriteLine();
 
+            Console.WriteLine("Octagono: ");
+            Enonagono enonagono = new Enonagono(8);
+            Console.WriteLine(enonagono.ToString());
+            Console.WriteLine("Área: " + enonagono.CalcularArea());
+            Console.WriteLine("Perímetro: " + enonagono.CalcularPerimetro());
+            Console.WriteLine();
+
             Console.WriteLine("Círculo: ");
             Circulo circulo = new Circulo(0, 0, 5);
             Console.WriteLine(circulo.ToString());
             Console.WriteLine("Área: " + circulo.CalcularArea());
             Console.WriteLine();
-
 
             Console.ReadKey();
         }

@@ -27,6 +27,11 @@ namespace Formas2D
             return 2 * (1 + Math.Sqrt(2)) * Math.Pow(lado, 2);
         }
 
+        public double CalcularPerimetro()
+        {
+            return 8 * lado;
+        }
+
         public override string ToString()
         {
             return base.ToString() + " Lado: " + lado;
