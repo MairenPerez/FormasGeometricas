@@ -10,11 +10,7 @@ namespace Formas2D
     {
         static void Main(string[] args)
         {
-            // Información de cada forma geométrica
-            Program program = new Program();
-            program.infoFormas();
-
-            // Diagrama 
+            // Instanciamos la clase Diagrama, calculamos el área total de todas las formas 
             Diagrama diagrama = new Diagrama();
 
             Rectangulo rectangulo = new Rectangulo(4, 5, 0);
@@ -35,8 +31,9 @@ namespace Formas2D
             Console.ReadKey();
         }
 
-
-
+        /// <summary>
+        /// Ejercicio 3
+        /// </summary>
         public void infoFormas()
         {
             Console.WriteLine("Rectángulo");
