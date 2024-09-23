@@ -10,6 +10,35 @@ namespace Formas2D
     {
         static void Main(string[] args)
         {
+            // Información de cada forma geométrica
+            Program program = new Program();
+            program.infoFormas();
+
+            // Diagrama 
+            Diagrama diagrama = new Diagrama();
+
+            Rectangulo rectangulo = new Rectangulo(4, 5, 0);
+            diagrama.AgregarForma(rectangulo);
+
+            Cuadrado cuadrado = new Cuadrado(0, 0, 4);
+            diagrama.AgregarForma(cuadrado);
+
+            Triangulo triangulo = new Triangulo(3, 4, 3, 0);
+            diagrama.AgregarForma(triangulo);
+
+            Circulo circulo = new Circulo(5);
+            diagrama.AgregarForma(circulo);
+
+            Console.WriteLine();
+
+            Console.WriteLine("Área total: " + diagrama.CalcularAreaTotal());
+            Console.ReadKey();
+        }
+
+
+
+        public void infoFormas()
+        {
             Console.WriteLine("Rectángulo");
 
             Rectangulo rectangulo = new Rectangulo(4, 5, 0);
@@ -37,7 +66,7 @@ namespace Formas2D
             Console.WriteLine();
 
             Console.WriteLine("Círculo: ");
-            Circulo circulo = new Circulo(0, 0, 5);
+            Circulo circulo = new Circulo(5);
             Console.WriteLine(circulo.ToString());
             Console.WriteLine("Área: " + circulo.CalcularArea());
             Console.WriteLine();

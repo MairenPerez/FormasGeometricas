@@ -14,7 +14,7 @@ namespace Formas2D
             Radio2 = 0;
         }
 
-        public Circulo(double area, double perimetro, double radio) : base(area, perimetro, radio, radio)
+        public Circulo(double radio) : base(radio, radio)
         {
         }
 
@@ -26,6 +26,11 @@ namespace Formas2D
         public override double CalcularArea()
         {
             return Math.PI * Radio1 * Radio2;
+        }
+
+        public double CalcularPerimetro()
+        {
+            return 2 * Math.PI * Radio1;
         }
     }
 }

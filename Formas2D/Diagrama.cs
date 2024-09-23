@@ -15,7 +15,7 @@ namespace Formas2D
             formas = new List<Forma2D>();
         }
 
-        public void AgregarForma(Forma2D forma )
+        public void AgregarForma(Forma2D forma)
         {
             formas.Add(forma);
         }
