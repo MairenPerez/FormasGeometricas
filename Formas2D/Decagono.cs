@@ -17,7 +17,7 @@ namespace Formas2D
             lado = 0;
         }
 
-        public Decagono(double lado) : base( 10)
+        public Decagono(double lado) : base(10)
         { 
             this.lado = lado;
         }

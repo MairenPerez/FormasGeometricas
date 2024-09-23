@@ -27,10 +27,5 @@ namespace Formas2D
         {
             return Math.PI * Radio1 * Radio2;
         }
-
-        public double CalcularPerimetro()
-        {
-            return 2 * Math.PI * Radio1;
-        }
     }
 }

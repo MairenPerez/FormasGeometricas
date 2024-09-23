@@ -36,8 +36,6 @@ namespace Formas2D
             return BaseT + AlturaT + Angulo;
         }
 
-
-
         public override string ToString()
         {
             return base.ToString() + $" Base: {BaseT} Altura: {AlturaT} Angulo: {Angulo}";

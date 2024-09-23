@@ -31,9 +31,7 @@ namespace Formas2D
             Console.ReadKey();
         }
 
-        /// <summary>
-        /// Ejercicio 3
-        /// </summary>
+       // Ejercicio 3 
         public void infoFormas()
         {
             Console.WriteLine("Rectángulo");

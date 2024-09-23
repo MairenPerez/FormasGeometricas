@@ -36,6 +36,11 @@ namespace Formas2D
             return (diagonalMayor * diagonalMenor) / 2;
         }
 
+        public double CalcularPerimetro()
+        {
+            return 4 * Math.Sqrt((Math.Pow(diagonalMayor, 2) + Math.Pow(diagonalMenor, 2)) / 4);
+        }
+
         public override string ToString()
         {
             return base.ToString() + " Diagonal Mayor: " + diagonalMayor + " Diagonal Menor: " + diagonalMenor;
